@@ -1,0 +1,24 @@
+{
+  "name": "img-compressor",
+  "version": "0.0.2",
+  "description": "一个JS图片压缩工具",
+  "main": "index.js",
+  "homepage": "http://ghmagical.com",
+  "scripts": {
+    "build": "npm run clean:dist && npm run webpack",
+    "clean:dist": "rimraf -- dist",
+    "webpack": "node --max_old_space_size=4096 node_modules/webpack/bin/webpack.js"
+  },
+  "author": "TG",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "uglifyjs-webpack-plugin": "^1.2.7",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8"
+  }
+}
